@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Survei Kebahagiaan</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survei Kebahagiaan</h1>
+    <p id="description">Pengen tau seberapa bahagia kamu</p>
+    <form id="survey-form">
+<!Informasi Pribadi>
+      <fieldset id="personal-infos">
+        <legend>Informasi Pribadi</legend>
+        <div class="fieldset-content">
+          <label for="name" id="name-label">Nama mu siapa?</label>
+          <input type="text" id="name" name="name" placeholder="Bambang" required/>
+
+          <label for="number" id="number-label">Rumah mu nomor berapa?</label>
+          <input type="number" id="number" name="number" min="1" max="100" placeholder="23" required/>
+
+          <label for="email" id="email-label">Alamat email mu apa?</label>
+          <input type="email" id="email" name="email" placeholder="bambang23@ulala.com" required/>
+
+          <label for="birth" id="birth-label">Kamu lahir tanggal berapa?</label>
+          <input type="date" id="birth" name="birth" required/>
+
+          <label for="nationality" id="nationality-label">Kamu asalnya dari mana?</label>
+          <select id="dropdown" name="nationality" required />
+            <option value="" disabled selected> Pilih satu dong </option>
+           <option value="1" Indonesia> Indonesia </option>
+           <option value="2" Planet> Planet lain </option>
+         </select>
+        </div>
+     </fieldset>
+        
+      <fieldset id="meteran-cinta">
+        <legend>Meteran kebahagiaan </legend>
+        <div class="fieldset-content">
+        <label for="level-sayang"> Seberapa bahagia kamu? </label>
+        <div class="inline">
+          <input type="radio" id="gbgt" name="level-sayang" value="gbgt" checked/> <span class="radio-checkbox-text-inline">g bgt</span>
+          </div>
+          <div class="inline">
+          <input type="radio" id="baja" name="level-sayang" value="baja" checked/> <span class="radio-checkbox-text-inline">b aja</span>
+          </div>
+          <div class="inline">
+          <input type="radio" id="bgt" name="level-sayang" value="bgt" checked/> <span class="radio-checkbox-text-inline">bgt</span>
+          </div>
+        </div>
+
+          <label for="level-keinginan"> Apa yang kamu inginkan untuk bahagia? </label>
+        <div class="radio-checkbox-group">
+          <input type="checkbox" id="harta" name="level-keinginan" value="harta" checked/> <span class="radio-checkbox-text-inline">Selamat dunia akhirat</span>
+          </div>
+          <div class="inline">
+          <input type="checkbox" id="tahta" name="level-keinginan" value="tahta" checked/> <span class="radio-checkbox-text-inline">Karir setinggi langit</span>
+          </div>
+          <div class="inline">
+          <input type="checkbox" id="jiwa" name="level-keinginan" value="jiwa" checked/> <span class="radio-checkbox-text-inline">Uang tak kunjung habis</span>
+          </div>
+          <div class="inline">
+          <input type="checkbox" id="raga" name="level-keinginan" value="raga" checked/> <span class="radio-checkbox-text-inline">bgt</span>
+          </div>
+        </div>
+      </div>
+</fieldset>
+
+    <fieldset id="pesan-tambahan">
+      <legend> Tambahan </legend>
+      <div class="field-content">
+        <label for="pesan-tambahan"> Secara singkat, apa yang ingin kamu sampaikan?</label>
+        <textarea placeholder="apa hayo..."></textarea>
+      </div>
+    </fieldset>
+
+    <div id="validation-button">
+      <button type="reset" id="reset" name="reset" value="Reset">Reset</button>
+      <button type="submit" id="submit" name="submit" value="Submit">Submit</form>
+    </div>
